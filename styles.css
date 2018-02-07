@@ -20,15 +20,15 @@ span {
 
 .card_picture {
   margin-left: 3%;
-  width: 91%;
-  border: 5px solid black;
+  width: 90%;
+  border: 6px solid black;
 }
 
 .card_description {
   border: 1px solid black;
   margin: 3%;
   padding: 3%;
-  width: 87.5%;
+  width: 87%;
 }
 
 .card_fact {
