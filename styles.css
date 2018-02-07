@@ -7,7 +7,7 @@ span {
 }
 
 .main_card {
-  padding: 10px;
+  padding: 1%;
   border: 2px solid grey;
   border-radius: 15px;
   box-shadow: 1px 2px 2px 1px grey;
@@ -15,26 +15,27 @@ span {
 }
 
 .card_title {
-  padding-left: 10px;
+  padding-left: 3%;
 }
 
 .card_picture {
-  margin-left: 10px;
-  width: 292px;
+  margin-left: 3%;
+  width: 91%;
   border: 5px solid black;
 }
 
 .card_description {
   border: 1px solid black;
-  margin: 10px;
-  padding: 10px;
-  width: 280px;
+  margin: 3%;
+  padding: 3%;
+  width: 87.5%;
 }
 
-.fun_fact {
+.card_fact {
   font-style: italic;
 }
+
 ul {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0%;
 }
