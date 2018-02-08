@@ -14,13 +14,22 @@
     <div id="container"></div>
 
     <script type="text/babel">
+        var yellow = {
+            backgroundColor: '#ffff80'
+        }
+        var blue = {
+            backgroundColor: 'lightblue'
+        }
+        var gray = {
+            backgroundColor: 'lightgray'
+        }
         var CardCollection = React.createClass({
             render: function () {
                 return (
                 <div className="flex">
-                    <PokemonCard name="#145 Zapdos" image="imgs/zapdos.png" fact="Zapdos is one of a trio of legendary bird Pokémon" title="The Electric Pokemon" height="1.6 m" weight="52.6 kg" generation="1" color="yellow" description="Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts."/>
-                    <PokemonCard name="#227 Skarmory" image="imgs/skarmory.png" fact="Skarmory's wings are actually hollow, allowing it to travel up to 300 km/h." title="Armor Bird Pokemon" height="1.7 m" weight="50.5 kg" generation="2" color="grey" description="Skarmory is a silver-gray, avian Pokémon with a long, metallic blue neck, legs, and tail. It has yellow eyes, a pointed beak with several pointed teeth, and a triangular crest on its head."/>
-                    <PokemonCard name="#382 Kyogre" image="imgs/kyogre.png" fact="Kyogre controls rain and water" title="Sea Basin Pokémon" height="4.5 m" weight="352 kg" generation="3" color="blue" description="Kyogre is a massive whale-like Pokémon with two big pectoral fins, each with four white square-shaped nails. It has a deep blue body and a white chin area with two small spikes protruding under it."/>
+                    <PokemonCard name="#145 Zapdos" image="imgs/zapdos.png" fact="Zapdos is one of a trio of legendary bird Pokémon" title="The Electric Pokemon" height="1.6 m" weight="52.6 kg" generation="1" style={yellow} description="Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts."/>
+                    <PokemonCard name="#227 Skarmory" image="imgs/skarmory.png" fact="Skarmory's wings are actually hollow, allowing it to travel up to 300 km/h." title="Armor Bird Pokemon" height="1.7 m" weight="50.5 kg" generation="2" color="grey" style={gray} description="Skarmory is a silver-gray, avian Pokémon with a long, metallic blue neck, legs, and tail. It has yellow eyes, a pointed beak with several pointed teeth, and a triangular crest on its head."/>
+                    <PokemonCard name="#382 Kyogre" image="imgs/kyogre.png" fact="Kyogre controls rain and water" title="Sea Basin Pokémon" height="4.5 m" weight="352 kg" generation="3" color="blue" style={blue} description="Kyogre is a massive whale-like Pokémon with two big pectoral fins, each with four white square-shaped nails. It has a deep blue body and a white chin area with two small spikes protruding under it."/>
                 </div>
                 )
             }
@@ -28,7 +37,7 @@
         var PokemonCard = React.createClass({
             render: function () {
                 return (
-                    <div className="main_card">
+                    <div className="main_card" style={this.props.style}>
                         <h3 className="card_title">{this.props.name}</h3>
                         <img className="card_picture" src={this.props.image} alt="Trading Card Image"></img>
                         <div className="card_description">
